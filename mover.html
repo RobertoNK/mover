@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script type="text/javascript" src="mover.js"></script>
+    </head>
+    <body>
+        <form action="">
+            <p>
+            <label for="">
+                x-coordinate :
+                <input type="text" id="leftCoord" size="3">
+            </label>
+            <br>
+            <label for="">
+                y-coordinate :
+                <input type="text" id="topCoord" size="3">
+            </label>
+            <br>
+            <input type="button" value="Move it" onclick="moveIt('saturn',document.getElementById('topCoord').value,document.getElementById('leftCoord').value)"/>
+            </p>
+        </form>
+        <div id="saturn" style="position: absolute; top:115px;left: 0;">
+            <img src="saturn.jpg" alt="picture of saturn">
+        </div>
+    </body>
+</html>
